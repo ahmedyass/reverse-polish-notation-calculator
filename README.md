@@ -72,7 +72,7 @@ docker-compose up --build
 - **Frontend :** React (Vite), TypeScript, TailwindCSS  
 - **Outils :** Docker, Docker Compose
 
-## Exécution des tests unitaires avec `pytest`
+## Exécution des tests unitaires
 ```sh
 pytest -v
 ```
