@@ -1,4 +1,4 @@
-### Calculatrice en Notation Polonaise Inverse (NPI)
+# Calculatrice en Notation Polonaise Inverse (NPI)
 
 Ce projet est une application **React (Vite) + FastAPI** qui permet de calculer des expressions en **Notation Polonaise Inverse (RPN)**, d'afficher l'historique des calculs et d'exporter les données au format CSV.
 
