@@ -19,7 +19,7 @@ const Export = () => {
         onClick={handleExport}
         className="w-full bg-green-500 text-white p-2 rounded-lg hover:bg-green-700"
       >
-        Export CSV
+        Exporter le CSV
       </button>
     </div>
   );

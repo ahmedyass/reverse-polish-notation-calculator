@@ -11,7 +11,6 @@ export interface APIError {
   detail: string;
 }
 
-// Function to calculate an RPN expression
 export const calculateExpression = async (
   expression: string
 ): Promise<CalculationResponse> => {
@@ -33,7 +32,6 @@ export const calculateExpression = async (
   }
 };
 
-// Function to fetch calculation history
 export const getHistory = async (): Promise<CalculationResponse[]> => {
   try {
     const response = await fetch(`${API_BASE_URL}/history`);
@@ -48,7 +46,6 @@ export const getHistory = async (): Promise<CalculationResponse[]> => {
   }
 };
 
-// Function to export calculation data as a CSV file
 export const exportData = async (): Promise<Blob> => {
   try {
     const response = await fetch(`${API_BASE_URL}/export`);
@@ -59,6 +56,6 @@ export const exportData = async (): Promise<Blob> => {
 
     return response.blob();
   } catch (error) {
-    throw new Error((error as Error).message || "Unexpected error");
+    throw new Error((error as Error).message || "Erreur inattendue");
   }
 };

@@ -8,12 +8,12 @@ const Calculator = () => {
 
   const handleCalculate = async () => {
     if (!expression.trim()) {
-      setError("Please enter a valid RPN expression.");
+      setError("Saisissez une expression correct svp.");
       return;
     }
 
-    setError(null); // Reset error before making a request
-    setResult(null); // Reset result
+    setError(null);
+    setResult(null);
 
     try {
       const data = await calculateExpression(expression);
@@ -37,12 +37,12 @@ const Calculator = () => {
         onClick={handleCalculate}
         className="mt-2 w-full bg-blue-500 text-white p-2 rounded-lg hover:bg-blue-700"
       >
-        Calculate
+        Calculer
       </button>
 
       {result !== null && (
         <p className="mt-2 text-lg font-semibold text-green-600">
-          Result: {result}
+          Resultat: {result}
         </p>
       )}
 
