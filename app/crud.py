@@ -1,5 +1,5 @@
 from sqlalchemy.orm import Session
-from .models import Calculation
+from app.models import Calculation
 
 def evaluate_rpn(expression: str) -> float:
     """
