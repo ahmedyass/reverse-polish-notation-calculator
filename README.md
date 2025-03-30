@@ -48,12 +48,12 @@ cd reverse-polish-notation-calculator
 
 **2. Lancez l'application avec Docker Compose :**  
 ```sh
-docker-compose up --build
+docker compose up -d --build
 ```
 
 **3. Accédez à l'application :**  
-- Frontend (React) : `http://localhost:3000`  
-- API (FastAPI) : `http://localhost:8000/docs` (Swagger UI)  
+- Frontend (React) : <http://localhost:3000>  
+- API (FastAPI) : <http://localhost:8000/docs> (Swagger UI)  
 
 ## Technologies utilisées
 <table> 
