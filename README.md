@@ -56,6 +56,17 @@ docker-compose up --build
 - API (FastAPI) : `http://localhost:8000/docs` (Swagger UI)  
 
 ## Technologies utilisées
+<table> 
+    <tr>
+        <td align="center"><img src="https://cdn.worldvectorlogo.com/logos/react-2.svg" width="50"/><br>React</td>
+        <td align="center"><img src="https://vitejs.dev/logo.svg" width="50"/><br>Vite</td>
+        <td align="center"><img src="https://cdn.worldvectorlogo.com/logos/tailwindcss.svg" width="50"/><br>TailwindCSS</td>
+        <td align="center"><img src="https://fastapi.tiangolo.com/img/logo-margin/logo-teal.png" width="50"/><br>FastAPI</td>
+        <td align="center"><img src="https://cdn.worldvectorlogo.com/logos/postgresql.svg" width="50"/><br>PostgreSQL</td>
+        <td align="center"><img src="https://cdn.worldvectorlogo.com/logos/docker.svg" width="50"/><br>Docker</td> 
+    </tr> 
+</table>
+
 - **Backend :** FastAPI, SQLAlchemy, Pydantic  
 - **Base de données :** PostgreSQL  
 - **Frontend :** React (Vite), TypeScript, TailwindCSS  
