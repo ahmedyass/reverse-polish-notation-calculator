@@ -14,16 +14,17 @@ Ce projet est une application **React (Vite) + FastAPI** qui permet de calculer 
 ## Architecture du projet
 ```
 project-root/
-│── backend/                # API FastAPI
-│   ├── app/
-│   │   ├── crud.py         # Opérations CRUD pour la base de données
-│   │   ├── database.py     # Connexion à la base de données
-│   │   ├── main.py         # Point d'entrée FastAPI
-│   │   ├── models.py       # Modèles SQLAlchemy
-│   │   ├── routes/         # Routes API (calculs, historique, export)
-│   │   ├── schemas.py      # Schémas Pydantic
-│   ├── Dockerfile          # Dockerfile pour le backend
-│   ├── requirements.txt    # Dépendances Python
+├── app/                    # API FastAPI
+│   ├── crud.py             # Opérations CRUD pour la base de données
+│   ├── database.py         # Connexion à la base de données
+│   ├── main.py             # Point d'entrée FastAPI
+│   ├── models.py           # Modèles SQLAlchemy
+│   ├── routes/             # Routes API (calculs, historique, export)
+│   ├── schemas.py          # Schémas Pydantic
+│   ├──Dockerfile           # Dockerfile pour le backend
+│   ├──requirements.txt     # Dépendances Python
+│
+├── tests/                  # Tests unitaires du backend
 │
 │── frontend/               # Interface utilisateur React
 │   ├── src/
