@@ -13,7 +13,7 @@ Ce projet est une application **React (Vite) + FastAPI** qui permet de calculer 
 
 ## Architecture du projet
 ```
-project-root/
+reverse-polish-notation-calculator/
 ├── app/                    # API FastAPI
 │   ├── crud.py             # Opérations CRUD pour la base de données
 │   ├── database.py         # Connexion à la base de données
