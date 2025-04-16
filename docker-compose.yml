@@ -1,5 +1,3 @@
-version: '3.9'
-
 services:
   api:
     build: ./app
@@ -7,9 +5,9 @@ services:
       - "8000:8000"
     depends_on:
       db:
-        condition: service_healthy  # 🔹 Attente que la DB soit prête
+        condition: service_healthy
     environment:
-      - DATABASE_URL=postgresql://postgres:password@db:5432/rpncalculator  # 🔹 db au lieu de localhost
+      - DATABASE_URL=postgresql://postgres:password@db:5432/rpncalculator
     volumes:
       - .:/app
     command: ["uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "8000", "--reload"]
@@ -25,7 +23,7 @@ services:
       - "5432:5432"
     volumes:
       - postgres_data:/var/lib/postgresql/data
-    healthcheck:  # 🔹 Vérifie si PostgreSQL est prêt avant de démarrer l'API
+    healthcheck:
       test: ["CMD-SHELL", "pg_isready -U postgres"]
       interval: 5s
       timeout: 3s
